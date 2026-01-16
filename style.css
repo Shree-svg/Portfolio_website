@@ -1,22 +1,47 @@
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background-image: url("https://images.unsplash.com/1600x900/?technology");
+    font-family: "Segoe UI", Arial, sans-serif;
+    background-image: url("https://images.unsplash.com/1600x900/?coding,technology");
     background-size: cover;
     background-attachment: fixed;
+    color: #333;
 }
 
 .banner {
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, 0.75);
     color: white;
     text-align: center;
-    padding: 40px;
+    padding: 80px 20px;
+}
+
+.banner h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 25px;
+    background-color: #00e5ff;
+    color: black;
+    text-decoration: none;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: white;
+    box-shadow: 0 0 15px #00e5ff;
+    transform: translateY(-3px);
 }
 
 .navbar {
-    background-color: #222;
+    background-color: #111;
     text-align: center;
-    padding: 10px;
+    padding: 12px;
+    position: sticky;
+    top: 0;
 }
 
 .navbar a {
@@ -25,39 +50,61 @@ body {
     text-decoration: none;
     text-transform: uppercase;
     padding: 8px 15px;
-    border-radius: 5px;
+    border-radius: 20px;
+    transition: background 0.3s;
 }
 
 .navbar a:hover {
-    background-color: #00bcd4;
-    box-shadow: 0 0 10px white;
+    background-color: #00e5ff;
+    color: black;
 }
 
 .card {
     background: white;
-    margin: 40px auto;
-    padding: 20px;
+    margin: 60px auto;
+    padding: 30px;
     width: 80%;
+    max-width: 900px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+}
+
+.skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.skills-grid span {
+    background-color: #f2f2f2;
+    padding: 10px;
+    text-align: center;
     border-radius: 10px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s, background 0.3s;
+}
+
+.skills-grid span:hover {
+    background-color: #00e5ff;
+    transform: scale(1.1);
 }
 
 .project-box {
     border: 1px solid #ddd;
-    padding: 15px;
-    margin-top: 15px;
-    border-radius: 8px;
-    transition: transform 0.3s;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 12px;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .project-box:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 10px #00bcd4;
+    transform: translateY(-5px);
+    box-shadow: 0 0 20px rgba(0, 229, 255, 0.7);
 }
 
 footer {
-    background-color: #111;
+    background-color: #000;
     color: white;
     text-align: center;
-    padding: 20px;
+    padding: 25px;
 }

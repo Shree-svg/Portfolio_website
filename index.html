@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>My Portfolio</title>
+    <title>Shreedhar | Web Portfolio</title>
 
     <!-- External CSS -->
     <link rel="stylesheet" href="style.css">
@@ -10,22 +10,25 @@
     <!-- Internal CSS -->
     <style>
         .highlight {
-            color: darkblue;
+            color: #00e5ff;
             text-transform: uppercase;
+            letter-spacing: 2px;
         }
     </style>
 </head>
 <body>
 
-    <!-- Banner Section -->
+    <!-- Hero Banner -->
     <header class="banner">
-        <h1 class="highlight">Welcome to My Portfolio</h1>
-        <p style="font-style: italic;">Web Developer | Designer | Student</p> <!-- Inline CSS -->
+        <h1 class="highlight">Shreedhar</h1>
+        <p style="font-style: italic;">Creative Web Developer | Tech Enthusiast | Problem Solver</p> <!-- Inline CSS -->
+        <a href="#contact" class="btn">Get In Touch</a>
     </header>
 
     <!-- Navigation Menu -->
     <nav class="navbar">
         <a href="#about">About</a>
+        <a href="#skills">Skills</a>
         <a href="#projects">Projects</a>
         <a href="#contact">Contact</a>
     </nav>
@@ -33,26 +36,71 @@
     <!-- About Section -->
     <section id="about" class="card">
         <h2>About Me</h2>
-        <p>Hello! I am a passionate developer learning web technologies and building creative projects.</p>
+        <p>
+            I am a passionate and detail-oriented web developer with a strong interest in building clean, user-friendly, and responsive digital experiences. I enjoy transforming ideas into functional, visually engaging websites and continuously expanding my knowledge in modern web technologies.
+        </p>
+        <p>
+            My academic background and hands-on project experience have helped me develop strong problem-solving skills, teamwork abilities, and a commitment to writing well-structured, efficient code.
+        </p>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="card">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <span>HTML5</span>
+            <span>CSS3</span>
+            <span>JavaScript</span>
+            <span>Git & GitHub</span>
+            <span>Responsive Design</span>
+            <span>UI/UX Principles</span>
+            <span>Python Basics</span>
+            <span>Problem Solving</span>
+        </div>
     </section>
 
     <!-- Projects Section -->
     <section id="projects" class="card">
-        <h2>Projects</h2>
+        <h2>Featured Projects</h2>
+
         <div class="project-box">
-            <h3>Automatic Room Lighting System</h3>
-            <p>Arduino-based system using ultrasonic sensors for smart lighting control.</p>
+            <h3>Personal Portfolio Website</h3>
+            <p>
+                Designed and developed a fully responsive personal portfolio website using HTML and CSS. The site features smooth hover effects, structured layouts, and GitHub Pages deployment for live hosting.
+            </p>
         </div>
+
         <div class="project-box">
-            <h3>Temperature-Based Fan Control</h3>
-            <p>Electronics project using DHT11 sensor to regulate fan speed.</p>
+            <h3>Student Management Dashboard</h3>
+            <p>
+                Built a web-based dashboard interface that allows users to view, manage, and organize student records efficiently. Focused on clean UI design, layout consistency, and user-friendly navigation.
+            </p>
+        </div>
+
+        <div class="project-box">
+            <h3>Smart Attendance System (Concept Project)</h3>
+            <p>
+                Designed a conceptual web interface for a smart attendance tracking system featuring login authentication, real-time status display, and data visualization for attendance analytics.
+            </p>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="card">
+        <h2>Contact Me</h2>
+        <p>Email: shreedhar.dev@example.com</p>
+        <p>GitHub: github.com/shreedhar-dev</p>
+        <p>LinkedIn: linkedin.com/in/shreedhar</p>
+    </section>
+
     <!-- Footer -->
-    <footer id="contact">
-        <p>Contact: myemail@example.com</p>
-        <p>&copy; 2025 My Portfolio</p>
+    <footer>
+        <div class="footer-content">
+            <h3>Created By</h3>
+            <p><strong>Shreedhar</strong></p>
+            <p>Registration Number: 24BPS1149</p>
+            
+        </div>
     </footer>
 
 </body>
